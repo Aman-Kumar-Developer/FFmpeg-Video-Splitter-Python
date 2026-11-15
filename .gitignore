@@ -1,0 +1,20 @@
+# User media and generated clips
+/input/**
+!/input/.gitkeep
+/output/**
+!/output/.gitkeep
+
+# Python artifacts and environments
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+
+# Temporary and local files
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
