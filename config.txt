@@ -1,0 +1,17 @@
+# FFmpeg Video Splitter configuration
+# Set split_mode to duration or size, then adjust the corresponding values.
+# Size values use MiB (1 MB = 1,048,576 bytes). Safety margin is subtracted from the cap.
+
+[PROJECT]
+name = FFmpeg Video Splitter
+description = Splits videos into independently playable clips using FFmpeg.
+
+[SETTINGS]
+split_mode = size
+chunk_duration_seconds = 60
+max_chunk_size_mb = 25
+size_safety_margin_mb = 1
+
+[PROCESSING]
+parallel_processing = true
+max_concurrent_videos = 2
